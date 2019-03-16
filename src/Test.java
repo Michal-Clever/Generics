@@ -14,10 +14,10 @@ public class Test {
         System.out.println(someone);
 
 
-        Optional<Double> divideResult = divide(1.0,0.0);
-        if(divideResult.isPresent()){
+        Optional<Double> divideResult = divide(1.0, 0.0);
+        if (divideResult.isPresent()) {
             System.out.println(divideResult.get());
-        }else{
+        } else {
             System.out.println("Division by zero");
         }
     }
