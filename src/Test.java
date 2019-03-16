@@ -12,6 +12,14 @@ public class Test {
         Box<Person> room = new Box<>(person);
         Person someone = room.getFromBox();
         System.out.println(someone);
+
+
+        Optional<Double> divideResult = divide(1.0,0.0);
+        if(divideResult.isPresent()){
+            System.out.println(divideResult.get());
+        }else{
+            System.out.println("Division by zero");
+        }
     }
 
     private static Optional<Double> divide(double a, double b) {
