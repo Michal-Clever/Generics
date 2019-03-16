@@ -6,6 +6,7 @@ public class Test {
 
         boxExemple();
         javaExample();
+        Empty empty = new Empty();
 
 
     }
