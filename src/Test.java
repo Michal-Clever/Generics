@@ -12,7 +12,14 @@ public class Test {
         Box<Person> room = new Box<>(person);
         Person someone = room.getFromBox();
         System.out.println(someone);
+    }
 
-        Optional<String> optional = new Optional<>();
+    private static Optional<Double> divide(double a, double b) {
+        if (b == 0.0) {
+            return Optional.empty();
+        } else {
+            return Optional.of(a / b);
+        }
     }
 }
+
